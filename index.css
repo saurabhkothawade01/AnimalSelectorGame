@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+}
+
+#heading {
+    width: 99%;
+    height: 8%;
+    position: absolute;
+    background-image: linear-gradient(to right bottom, #d31dab, #bd1ebc, #a029cc, #7535dd, #1241eb);
+    text-align: center;
+    padding-top: 0.5%;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: cursive, sans-serif;
+    color: white;
+    border: 8px groove white;
+    text-shadow: 5px 5px 5px black, 0 0 1em , 0 0 0.2em blue;
+}
+
+#mainDiv {
+    margin-top: 4.0%;
+    width: 99%;
+    height: 87%;
+    position: absolute;
+    background-image: url("jungle.jpg");
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    border: 8px groove green;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#animImage {
+    width: 8%;
+    height: 20%;
+    border-radius: 360px;
+    position: relative;
+    left: 180px;
+    top: 100px;
+}
+
+#sc {
+    width: 10%;
+    height: 10%;
+    margin-top: 1%;
+    margin-left: 88%;
+    border: 8px solid orangered;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: cursive, sans-serif;
+    color: white;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+#animName {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    width: 10%;
+    height: 10%;
+    margin-top: 1%;
+    margin-left: 1%;
+    position: absolute;
+    border: 8px solid red;
+    border-radius: 10px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: cursive, sans-serif;
+    color: white;
+}
+
+
+
+
+#blinking{
+    animation:blinkingText 1.2s infinite;
+    font-size: 100px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: cursive, sans-serif;
+    position: absolute;
+    padding-left: 30%;
+    padding-top: 15%;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
